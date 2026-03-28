@@ -1,20 +1,14 @@
-# LeetCode Plugin Code Template
+# LeetCode 题解
 
-This repository allows you to debug LeetCode algorithm codes locally in vscode or Jetbrains IDE, currently supports Java/C++/Python/Golang/JavaScript.
+个人 LeetCode 刷题记录，包含各题目的解题思路与代码实现。
 
-Detailed configuration methods are available in [Jetbrains LeetCode Plugin Usage Guide](https://labuladong.online/algo/en/intro/jetbrains/) and [vscode LeetCode Plugin Usage Guide](https://labuladong.online/algo/en/intro/vscode/).
+本项目基于 [labuladong/lc-plugin-template](https://gitee.com/labuladong/lc-plugin-template) 搭建，感谢原作者提供的本地调试框架，支持在 VSCode 或 JetBrains IDE 中调试力扣代码。
 
-Welcome to submit Issue/PR to optimize this repository or add new language support.
+## 环境配置
 
-# 力扣算法本地调试模板
+详细配置方法见原作者文档：
 
-本仓库可以让你在本地 vscode 或 Jetbrains IDE 中调试力扣算法代码，目前支持 Java/C++/Python/Golang/JavaScript 等语言。
+- [JetBrains 刷题插件使用说明](https://labuladong.online/algo/intro/jetbrains/)
+- [VSCode 刷题插件使用说明](https://labuladong.online/algo/intro/vscode/)
 
-详细的配置方法见 [Jetbrains 刷题插件使用说明](https://labuladong.online/algo/intro/jetbrains/) 和 [vscode 刷题插件使用说明](https://labuladong.online/algo/intro/vscode/)。
-
-欢迎提出 Issue/PR 优化本仓库，或添加新的编程语言支持。
-
-
-
-
-
+目前支持语言：Java / C++ / Python / Golang / JavaScript
