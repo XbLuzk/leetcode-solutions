@@ -3,7 +3,7 @@ package leetcode.editor.cn;
 import java.util.*;
 import leetcode.editor.common.*;
 
-public class MergeTwoSortedLists {
+public class PartitionList {
 
     //leetcode submit region begin(Prohibit modification and deletion)
     /**
@@ -17,35 +17,37 @@ public class MergeTwoSortedLists {
      * }
      */
     class Solution {
-        public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-            ListNode dummy=new ListNode(-1);
-            ListNode p=dummy;
-            ListNode p1=list1;
-            ListNode p2=list2;
-            while(p1!=null&&p2!=null)
+        public ListNode partition(ListNode head, int x) {
+            ListNode p=head;
+            ListNode dummy1=new ListNode(-1);
+            ListNode dummy2=new ListNode(-1);
+            ListNode p1=dummy1;
+            ListNode p2=dummy2;
+            while(p!=null)
             {
-                if(p1.val<= p2.val)
+                if(p.val<x)
                 {
-                    p.next=p1;
+                    p1.next=p;
                     p1=p1.next;
                 }
-                else{
-                    p.next=p2;
+                else
+                {
+                    p2.next=p;
                     p2=p2.next;
                 }
-                p=p.next;
+                ListNode temp= p.next;
+                p.next=null;
+                p=temp;
             }
-            if(p1!=null) p.next=p1;
-            if(p2!=null) p.next=p2;
-
-            return dummy.next;
+            p1.next=dummy2.next;
+            return dummy1.next;
         }
     }
     //leetcode submit region end(Prohibit modification and deletion)
 
     
     public static void main(String[] args) {
-        Solution solution = new MergeTwoSortedLists().new Solution();
+        Solution solution = new PartitionList().new Solution();
         // put your test code here
         
     }
